@@ -22,7 +22,7 @@ router.post('/', function(req, res, next) {
   var data = {};
   var code = req.body.code.toLowerCase().trim();
   //var image = _.padStart(getRandomInt(1, 22), 4, '0');
-  var validCodes = ['bruno', 'denis', 'elma', 'vanja'];
+  var validCodes = ['bruno', 'dragan', 'elma', 'vanja'];
   if (_.includes(validCodes, code)) {
     data.image = '/images/l_' + code + '.jpg';
   }
