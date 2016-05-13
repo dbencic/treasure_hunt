@@ -7,11 +7,9 @@ block content
     Enter code for each location to reveal it:
 
   h4
-    em.
-      hint: smurfs show only to the worthy
+    em hint: smurfs show only to the worthy
   h4
-    em.
-      hint II: friends are the keys
+    em hint II: name your friends
 
   form(action="location", method="POST")
     .unlock
@@ -19,7 +17,8 @@ block content
     input(type="submit", value="Unlock")
     
   if image
-    br
+    h4
+      em Now run there and pick up the code!
     img.location(src='#{image}')
   else
     h4.error #{message}

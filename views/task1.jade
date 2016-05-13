@@ -12,13 +12,13 @@ block content
 
   h4
     em.
-      hint: translate(0.000000,589.000000) scale(0.100000,-0.100000)
+      hint: xml doctype
   h4
     em.
       hint II: first letters of chosen ones names reveal the key
   h4
     em.
-      hint the sequel: speak friend and enter :D
+      hint - the sequel: speak friend and enter :D
 
   if message
     h4.error #{message}
@@ -26,7 +26,7 @@ block content
   form(action="task1", method="POST")
     .unlock
       - var count = 0
-      while count++ < 5
+      while count++ < 4
         select(name="code")
           option(value="") 
           option(value="A") A
