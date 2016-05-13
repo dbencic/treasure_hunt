@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1 Dev Days 2016 Treasure Hunt
+
+  h3.
+    Enter code for each location to reveal it:
+
+  h4
+    em.
+      hint: smurfs show only to the worthy
+  h4
+    em.
+      hint II: friends are the keys
+
+  form(action="location", method="POST")
+    .unlock
+      input(type="text", name="code")
+    input(type="submit", value="Unlock")
+    
+  if image
+    br
+    img.location(src='#{image}')
+  else
+    h4.error #{message}

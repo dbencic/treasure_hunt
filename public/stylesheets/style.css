@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font: 14px "Verdana", Helvetica, Arial, sans-serif;
+  background-color: grey;
+  color: azure;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.people img {
+  width: 100%;
+}
+
+.error {
+  color: orange;
+}
